@@ -1,9 +1,9 @@
 # NotifyWiz
 A clean and easy to use notification package for Javascript projects.
 
-!!This is still being worked on!!
+[![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 
-# Examples
+## Examples
 ```
 "use client";
 import Notifywiz from 'notifywiz';
@@ -26,7 +26,7 @@ export default function TestPage() {
 }
 ```
 
-# Parameters
+## Parameters
 ```
 * @param {string} title - The title of the notification. Defaults to "Warning" in the implementation.
 * @param {string} message - The message of the notification.
