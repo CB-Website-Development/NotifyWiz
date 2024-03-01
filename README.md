@@ -28,9 +28,9 @@ export default function TestPage() {
 
 #Parameters
 ```
-     * @param {string} title - The title of the notification. Defaults to "Warning" in the implementation.
-     * @param {string} message - The message of the notification.
-     * @param {Positions} position - The position of the notification. Defaults to "bottom-right" in the implementation, ('top' | 'bottom' | 'left' | 'right' | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left').
-     * @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
-     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'.  
+* @param {string} title - The title of the notification. Defaults to "Warning" in the implementation.
+* @param {string} message - The message of the notification.
+* @param {Positions} position - The position of the notification. Defaults to "bottom-right" in the implementation, ('top' | 'bottom' | 'left' | 'right' | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left').
+* @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
+* @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'.  
 ```
