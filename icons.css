@@ -1,0 +1,332 @@
+/* CSS ICON ALERT GENERAL */
+.screenAlert-icon{border-radius:50%;border:2px solid gray;box-sizing:content-box;height:40px; padding:0;position:relative;width:40px;}
+.screenAlert-icon + .screenAlert-icon {margin-top:25px}
+
+/* CSS SUCCESS */
+.screenAlert-icon.screenAlert-success{border-color:#6BC43C}
+.screenAlert-icon.screenAlert-success:after,
+.screenAlert-icon.screenAlert-success:before{background-color:transparent!important;content:'';height:60px;position:absolute;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:30px}
+.screenAlert-icon.screenAlert-success:before{border-radius:60px 0 0 60px;left:-16.5px;top:-3.5px;-webkit-transform-origin:30px 30px;transform-origin:30px 30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.screenAlert-icon.screenAlert-success:after{border-radius:0 60px 60px 0;left:15px;top:-5.5px;-webkit-transform-origin:0 30px;transform-origin:0 30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.screenAlert-icon.screenAlert-success .screenAlert-placeholder{border-radius:50%;border:2px solid rgba(165,220,134,0.2);box-sizing:content-box;height:40px;left:-2px;position:absolute;top:-2px;width:40px;z-index:2}
+.screenAlert-icon.screenAlert-success .screenAlert-line{background-color:#6BC43C;border-radius:1px;display:block;height:2.5px;position:absolute;z-index:2}
+.screenAlert-icon.screenAlert-success .screenAlert-line.screenAlert-tip{left:7px;top:23px;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:12.5px}
+.screenAlert-icon.screenAlert-success .screenAlert-line.screenAlert-long{right:4px;top:19px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);width:23.5px}
+.animateSuccessTip{-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}
+.animateSuccessLong{-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}
+/* ANIMATE SUCCESS */
+@-webkit-keyframes animateSuccessTip{0%,54%{width:0;left:0.5px;top:9.5px}70%{width:25px;left:-4px;top:18.5px}84%{width:8.5px;left:10.5px;top:24px}100%{width:12.5px;left:7px;top:22.5px}}
+@keyframes animateSuccessTip{0%,54%{width:0;left:0.5px;top:9.5px}70%{width:25px;left:-4px;top:18.5px}84%{width:8.5px;left:10.5px;top:24px}100%{width:12.5px;left:7px;top:22.5px}}
+@-webkit-keyframes animateSuccessLong{0%,65%{width:0;right:23px;top:27px}84%{width:27.5px;right:0;top:17.5px}100%{width:23.5px;right:4px;top:19px}}
+@keyframes animateSuccessLong{0%,65%{width:0;right:23px;top:27px}84%{width:27.5px;right:0;top:17.5px}100%{width:23.5px;right:4px;top:19px}}
+
+/* CSS ALERT */
+.screenAlert-icon.screenAlert-error{border-color:#FF0000}
+.screenAlert-icon.screenAlert-error:after,
+.screenAlert-icon.screenAlert-error:before{background-color:transparent!important;content:'';height:60px;position:absolute;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:30px}
+.screenAlert-icon.screenAlert-error:before{border-radius:60px 0 0 60px;left:-16.5px;top:-3.5px;-webkit-transform-origin:30px 30px;transform-origin:30px 30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.screenAlert-icon.screenAlert-error:after{border-radius:0 60px 60px 0;left:15px;top:-5.5px;-webkit-transform-origin:0 30px;transform-origin:0 30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.screenAlert-icon.screenAlert-error .screenAlert-placeholder{border-radius:50%;border:2px solid rgba(165,220,134,0.2);box-sizing:content-box;height:40px;left:-2px;position:absolute;top:-2px;width:40px;z-index:2}
+.screenAlert-icon.screenAlert-error .screenAlert-line{background-color:#FF0000;border-radius:1px;display:block;height:2.5px;position:absolute;z-index:2}
+.screenAlert-icon.screenAlert-error .screenAlert-line.screenAlert-tip{left:7px;top:23px;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:12.5px}
+.screenAlert-icon.screenAlert-error .screenAlert-line.screenAlert-long{right:4px;top:19px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);width:23.5px}
+.screenAlert-icon.screenAlert-error .screenAlert-x-mark{display:block;position:relative;z-index:2}
+.screenAlert-icon.screenAlert-error .screenAlert-placeholder{border:2px solid rgba(200,0,0,0.2)}
+.screenAlert-icon.screenAlert-error .screenAlert-line{background-color:#FF0000;top:18.5px;width:23.5px}
+.screenAlert-icon.screenAlert-error .screenAlert-line.screenAlert-left{left:8.5px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.screenAlert-icon.screenAlert-error .screenAlert-line.screenAlert-right{right:8px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.animateXLeft{-webkit-animation:animateXLeft .75s;animation:animateXLeft .75s}
+.animateXRight{-webkit-animation:animateXRight .75s;animation:animateXRight .75s}
+/* ANIMATE CROSS X */
+@-webkit-keyframes animateXLeft{0%,65%{left:41px;top:47.5px;width:0}84%{left:7px;top:16.5px;width:23.5px}100%{left:8.5px;top:18.5px;width:23.5px}}
+@keyframes animateXLeft{0%,65%{left:41px;top:47.5px;width:0}84%{left:7px;top:16.5px;width:23.5px}100%{left:8.5px;top:18.5px;width:23.5px}}
+@-webkit-keyframes animateXRight{0%,65%{right:41px;top:47.5px;width:0}84%{right:7px;top:16.5px;width:23.5px}100%{right:8px;top:18.5px;width:23.5px}}
+@keyframes animateXRight{0%,65%{right:41px;top:47.5px;width:0}84%{right:7px;top:16.5px;width:23.5px}100%{right:8px;top:18.5px;width:23.5px}}
+
+
+
+/* CSS WARNING */
+.screenAlert-icon.screenAlert-warning {
+    border-color: #FFA500;
+    transform: scale(0.5);
+}
+.screenAlert-icon.screenAlert-warning:before {
+    -webkit-animation: pulseWarning 2s linear infinite;
+    animation: pulseWarning 2s linear infinite;
+    background-color: transparent!important;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    width: 50%;
+}
+.screenAlert-icon.screenAlert-warning:after {
+    background-color: transparent!important;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+}
+.screenAlert-icon.screenAlert-warning .screenAlert-body {
+    background-color: #FFA500;
+    border-radius: 2px;
+    height: 23.5px;
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+    top: 5px;
+    width: 2.5px;
+    z-index: 2;
+}
+.screenAlert-icon.screenAlert-warning .screenAlert-dot {
+    background-color: #FFA500;
+    border-radius: 50%;
+    bottom: 5px;
+    height: 3.5px;
+    left: 50%;
+    margin-left: -1.5px;
+    position: absolute;
+    width: 3.5px;
+    z-index: 2;
+}
+.scaleWarning {
+    -webkit-animation: scaleWarning .75s infinite alternate;
+    animation: scaleWarning .75s infinite alternate;
+}
+.pulseWarningIns {
+    -webkit-animation: pulseWarningIns .75s infinite alternate;
+    animation: pulseWarningIns .75s infinite alternate;
+}
+/* ANIMATE WARNING */
+@-webkit-keyframes scaleWarning {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scaleWarning {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes pulseWarning {
+    0% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    30% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        background-color: #FFA500;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes pulseWarning {
+    0% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    30% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        background-color: #FFA500;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes pulseWarningIns {
+    0% {
+        background-color: #F8D486;
+    }
+    100% {
+        background-color: #FFA500;
+    }
+}
+@keyframes pulseWarningIns {
+    0% {
+        background-color: #F8D486;
+    }
+    100% {
+        background-color: #FFA500;
+    }
+}
+
+/* CSS INFO */
+.screenAlert-icon.screenAlert-info {
+    transform: rotate(180deg) !important;
+    border-color: #0000FF;
+}
+.screenAlert-icon.screenAlert-info:before {
+    -webkit-animation: pulseInfo 2s linear infinite;
+    animation: pulseInfo 2s linear infinite;
+    background-color: transparent!important;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    width: 50%;
+}
+.screenAlert-icon.screenAlert-info:after {
+    background-color: transparent!important;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+}
+.screenAlert-icon.screenAlert-info .screenAlert-body {
+    background-color: #3fc3ee;
+    border-radius: 2px;
+    height: 23.5px;
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+    top: 5px;
+    width: 2.5px;
+    z-index: 2;
+}
+.screenAlert-icon.screenAlert-info .screenAlert-dot {
+    background-color: #3fc3ee;
+    border-radius: 50%;
+    bottom: 5px;
+    height: 3.5px;
+    left: 50%;
+    margin-left: -1.5px;
+    position: absolute;
+    width: 3.5px;
+    z-index: 2;
+}
+.scaleInfo {
+    -webkit-animation: scaleInfo .75s infinite alternate;
+    animation: scaleInfo .75s infinite alternate;
+}
+.pulseInfoIns {
+    -webkit-animation: pulseInfoIns .75s infinite alternate;
+    animation: pulseInfoIns .75s infinite alternate;
+}
+/* ANIMATE INFO */
+@-webkit-keyframes scaleInfo {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scaleInfo {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes pulseInfo {
+    0% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    30% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        background-color: #0000FF;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes pulseInfo {
+    0% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    30% {
+        background-color: #fff;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        background-color: #0000FF;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes pulseInfoIns {
+    0% {
+        background-color: #3fc3ee;
+    }
+    100% {
+        background-color: #0000FF;
+    }
+}
+@keyframes pulseInfoIns {
+    0% {
+        background-color: #3fc3ee;
+    }
+    100% {
+        background-color: #0000FF;
+    }
+}
