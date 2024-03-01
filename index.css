@@ -4,18 +4,21 @@
 
   /* Start Top */
 
-  .top {
+  .notifywiz-top {
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .top-right {
+  .notifywiz-top-right {
+    position: fixed;
     top: 0;
     right: 0;
   }
 
-  .top-left {
+  .notifywiz-top-left {
+    position: fixed;
     top: 0;
     left: 0;
   }
@@ -24,31 +27,36 @@
 
   /* Start Bottom */
 
-  .bottom {
+  .notifywiz-bottom {
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .bottom-right {
+  .notifywiz-bottom-right {
+    position: fixed;
     bottom: 0;
     right: 0;
   }
 
-  .bottom-left {
+  .notifywiz-bottom-left {
+    position: fixed;
     bottom: 0;
     left: 0;
   }
 
   /* End Bottom */
 
-  .right {
+  .notifywiz-right {
+    position: fixed;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .left {
+  .notifywiz-left {
+    position: fixed;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -57,56 +65,62 @@
 
 /* End Positions */
 
-.container {
+.notifywiz-stackable-container {
+  position: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px;
+}
+
+.notifywiz-container {
   margin: 10px;
-  position: fixed;
   padding: 10px;
   min-width: 250px;
 }
 
-.inner-container {
+.notifywiz-inner-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.inner-container h1 {
+.notifywiz-inner-container h1 {
   font-weight: 700;
 }
 
-.title-description-container {
+.notifywiz-title-description-container {
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
   flex: 1 1 0%;
 }
 
-.success-container {
+.notifywiz-success-container {
   border-left: 4px solid #6BC43C;
   color: #6BC43C;
   background-color: #D6EEC8;
 }
 
-.warn-container {
+.notifywiz-warn-container {
   border-left: 4px solid #FFA500;
   color: #FFA500;
   background-color: #FFE4B5;
 }
 
-.info-container {
+.notifywiz-info-container {
   border-left: 4px solid #0000FF;
   color: #0000FF;
   background-color: #B5B5FF;
 }
 
-.error-container {
+.notifywiz-error-container {
   border-left: 4px solid #FF0000;
   color: #FF0000;
   background-color: #FFC1C1;
 }
 
 /* Slide In Animation */
-@keyframes slideIn {
+@keyframes notifywiz-slideIn {
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -117,12 +131,12 @@
   }
 }
 
-.slideIn {
-  animation: slideIn 0.5s forwards;
+.notifywiz-slideIn {
+  animation: notifywiz-slideIn 0.5s forwards;
 }
 
 /* Fade Out Animation */
-@keyframes fadeOut {
+@keyframes notifywiz-fadeOut {
   0% {
     opacity: 1;
   }
@@ -131,12 +145,12 @@
   }
 }
 
-.fadeOut {
-  animation: fadeOut 0.5s forwards;
+.notifywiz-fadeOut {
+  animation: notifywiz-fadeOut 0.5s forwards;
 }
 
 /* Slide Out Animation */
-@keyframes slideOut {
+@keyframes notifywiz-slideOut {
   0% {
     transform: translateX(0);
     opacity: 1;
@@ -147,12 +161,12 @@
   }
 }
 
-.slideOut {
-  animation: slideOut 0.5s forwards;
+.notifywiz-slideOut {
+  animation: notifywiz-slideOut 0.5s forwards;
 }
 
 /* Fade In Animation */
-@keyframes fadeIn {
+@keyframes notifywiz-fadeIn {
   0% {
     opacity: 0;
   }
@@ -161,11 +175,11 @@
   }
 }
 
-.fadeIn {
-  animation: fadeIn 0.5s forwards;
+.notifywiz-fadeIn {
+  animation: notifywiz-fadeIn 0.5s forwards;
 }
 
-@keyframes slideInCenter {
+@keyframes notifywiz-slideInCenter {
   0% {
     transform: translate(100%, -50%);
     opacity: 0;
@@ -176,11 +190,11 @@
   }
 }
 
-.slideInCenter {
-  animation: slideInCenter 0.5s forwards;
+.notifywiz-slideInCenter {
+  animation: notifywiz-slideInCenter 0.5s forwards;
 }
 
-@keyframes slideInCenterBottom {
+@keyframes notifywiz-slideInCenterBottom {
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -191,11 +205,11 @@
   }
 }
 
-.slideInCenterBottom {
-  animation: slideInCenterBottom 0.5s forwards;
+.notifywiz-slideInCenterBottom {
+  animation: notifywiz-slideInCenterBottom 0.5s forwards;
 }
 
-@keyframes fadeOutCenter {
+@keyframes notifywiz-fadeOutCenter {
   100% {
     transform: translate(100%, -50%);
     opacity: 0;
@@ -206,6 +220,6 @@
   }
 }
 
-.fadeOutCenter {
-  animation: fadeOutCenter 0.5s forwards;
+.notifywiz-fadeOutCenter {
+  animation: notifywiz-fadeOutCenter 0.5s forwards;
 }
