@@ -140,6 +140,46 @@
   background-color: #FFC1C1;
 }
 
+.notifywiz-success-border {
+  border-color: #6BC43C;;
+}
+
+.notifywiz-error-border {
+  border-color: #FF0000;;
+}
+
+.notifywiz-info-border {
+  border-color: #0000FF;;
+}
+
+.notifywiz-warn-border {
+  border-color: #FFA500;;
+}
+
+
+
+
+@keyframes line-animation {
+  0% { width: 100%; }
+  100% { width: 0%; }
+}
+
+.notifywiz-line-loading-animation {
+  animation: line-animation 2s forwards;
+  border: solid 1.5px;
+}
+
+.notifywiz-loading-container {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: fit-content;
+  width: 100%;
+}
+
+
+
+
 /* Slide In Animation */
 @keyframes notifywiz-slideIn {
   0% {
