@@ -3,6 +3,8 @@ A clean and easy to use notification package for Javascript projects.
 
 [![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 
+Installation: `npm i notifywiz`
+
 ## Examples
 ```
 "use client";
