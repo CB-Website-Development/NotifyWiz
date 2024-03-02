@@ -5,6 +5,7 @@ declare module 'notifywiz' {
 
 type Positions = 'top' | 'bottom' | 'left' | 'right' | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left';
 type Animations = 'fade' | 'slide' | 'none';
+
 interface INotifywiz {
 
     /**

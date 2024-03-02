@@ -108,6 +108,9 @@ function notificationHandler(type, title, message, position, duration, animation
     //Create Icon
     const iconElement = createNotificationIcon(type);
 
+    //Create Close Icon
+    const closeElement = createCloseElement(notificationElement, position);
+
     //Append to container
     appendToContainer(
         notificationElement,
@@ -116,6 +119,7 @@ function notificationHandler(type, title, message, position, duration, animation
         innerContainer,
         titleMessageContainer,
         iconElement,
+        closeElement,
         animation,
         position
     );
@@ -218,6 +222,28 @@ function createNotificationIcon(type) {
     return iconElement;
 }
 
+
+/**
+ * 
+ * Create the closing element of the notification.
+ * @param {HTMLElement} notificationElement - The container element of the notification.
+ * @param {Positions} position - The position of the notification.
+ * @returns {HTMLElement} The close icon of the notification.
+*/
+function createCloseElement(notificationElement, position) {
+
+    const closeNode = document.createElement('div');
+
+    closeNode.className = 'notifywiz-close-icon';
+    closeNode.innerHTML = Icons.close;
+    closeNode.onclick = () => {
+        window.document.getElementById(`notifywiz-container-${position}`).removeChild(notificationElement);
+    };
+
+    return closeNode;
+
+}
+
 /**
  * 
  * Append everything tougheter and return the notification.
@@ -227,6 +253,7 @@ function createNotificationIcon(type) {
  * @param {HTMLElement} innerContainer - The inner container of the notification.
  * @param {HTMLElement} titleMessageContainer - The title and message container of the notification.
  * @param {HTMLElement} iconElement - The icon element of the notification.
+ * @param {HTMLElement} closeElement - The close icon element of the notification.
  * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'.  
  * @param {Positions} position - The position of the notification.
  * @returns {HTMLElement} The body of the notification.
@@ -238,6 +265,7 @@ function appendToContainer(
     innerContainer,
     titleMessageContainer,
     iconElement,
+    closeElement,
     animation,
     position
 ) {
@@ -252,6 +280,7 @@ function appendToContainer(
     innerContainer.appendChild(iconNode);
     innerContainer.appendChild(titleMessageContainer);
     notificationElement.appendChild(innerContainer);
+    notificationElement.appendChild(closeElement);
 
     animate('in', notificationElement, animation);
 
