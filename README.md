@@ -33,7 +33,7 @@ export default function TestPage() {
 /**
  * 
  * Show a info notification.
- * @param {string} title - The title of the notification. Defaults to "Info" in the implementation.
+ * @param {string} title - The title of the notification. Defaults to "Type Of Notification" in the implementation.
  * @param {string} message - The message of the notification.
  * @param {Positions} position - The position of the notification.
  * @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
