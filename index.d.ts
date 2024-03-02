@@ -15,7 +15,8 @@ interface INotifywiz {
      * @param {string} message - The message of the notification.
      * @param {Positions} position - The position of the notification. Defaults to "bottom-right" in the implementation, ('top' | 'bottom' | 'left' | 'right' | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left').
      * @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
-     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'. 
+     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'slide'. 
+     * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation.
      * @returns {void} 
     */
     success(params?: {
@@ -23,7 +24,8 @@ interface INotifywiz {
         message?: string,
         position?: Positions,
         duration?: number,
-        animation?: Animations
+        animation?: Animations,
+        loadingIndicator?: boolean
     }): void;
 
     /**
@@ -33,7 +35,8 @@ interface INotifywiz {
      * @param {string} message - The message of the notification.
      * @param {Positions} position - The position of the notification. Defaults to "bottom-right" in the implementation, ('top' | 'bottom' | 'left' | 'right' | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left').
      * @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
-     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'.  
+     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'slide'.  
+     * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation.
      * @returns {void} 
     */
     error(params?: {
@@ -41,7 +44,8 @@ interface INotifywiz {
         message?: string,
         position?: Positions,
         duration?: number,
-        animation?: Animations
+        animation?: Animations,
+        loadingIndicator?: boolean
     }): void;
 
     /**
@@ -51,7 +55,8 @@ interface INotifywiz {
      * @param {string} message - The message of the notification.
      * @param {Positions} position - The position of the notification. Defaults to "bottom-right" in the implementation, ('top' | 'bottom' | 'left' | 'right'  | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left').
      * @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
-     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'.  
+     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'slide'.  
+     * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation. 
      * @returns {void} 
     */
     warning(params?: {
@@ -59,7 +64,8 @@ interface INotifywiz {
         message?: string,
         position?: Positions,
         duration?: number,
-        animation?: Animations
+        animation?: Animations,
+        loadingIndicator?: boolean
     }): void;
 
     /**
@@ -69,7 +75,8 @@ interface INotifywiz {
      * @param {string} message - The message of the notification.
      * @param {Positions} position - The position of the notification. Defaults to "bottom-right" in the implementation, ('top' | 'bottom' | 'left' | 'right' | 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left').
      * @param {number} duration - The duration of the notification. Defaults to 3000 in the implementation.
-     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'none'.   
+     * @param {animation} animation - The animation of the notification, ('fade', 'slide', 'none') defaults to 'slide'.   
+     * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation.
      * @returns {void} 
     */
     info(params?: {
@@ -77,7 +84,8 @@ interface INotifywiz {
         message?: string,
         position?: Positions,
         duration?: number,
-        animation?: Animations
+        animation?: Animations,
+        loadingIndicator?: boolean
     }): void;
 
 }
