@@ -1,5 +1,3 @@
-@import "icons.css";
-
 /* Start Positions */
 
   /* Start Top */
@@ -21,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-  }
+  } 
 
   /* End Top */
 
@@ -65,6 +63,15 @@
 
 /* End Positions */
 
+.notifywiz-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.notifywiz-warning-icon {
+  color: #FFA500;
+}
+
 .notifywiz-stackable-container {
   position: flex;
   flex-direction: column;
@@ -73,9 +80,11 @@
 }
 
 .notifywiz-container {
-  margin: 10px;
-  padding: 10px;
+  margin: 1.5rem;
+  padding: 1rem;
   min-width: 250px;
+  border-radius: 4px;
+  position: relative;
 }
 
 .notifywiz-inner-container {
@@ -88,6 +97,18 @@
   font-weight: 700;
 }
 
+.notifywiz-inner-container p {
+  font-weight: 500;
+}
+
+.notifywiz-close-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .notifywiz-title-description-container {
   display: flex;
   flex-direction: column;
@@ -96,26 +117,26 @@
 }
 
 .notifywiz-success-container {
-  border-left: 4px solid #6BC43C;
-  color: #6BC43C;
+  border-left: 6px solid #6BC43C;
+  color: #267100;
   background-color: #D6EEC8;
 }
 
 .notifywiz-warn-container {
-  border-left: 4px solid #FFA500;
-  color: #FFA500;
+  border-left: 6px solid #FFA500;
+  color: #8C5B00;
   background-color: #FFE4B5;
 }
 
 .notifywiz-info-container {
-  border-left: 4px solid #0000FF;
-  color: #0000FF;
+  border-left: 6px solid #0000FF;
+  color: #0000A5;
   background-color: #B5B5FF;
 }
 
 .notifywiz-error-container {
-  border-left: 4px solid #FF0000;
-  color: #FF0000;
+  border-left: 6px solid #FF0000;
+  color: #800000;
   background-color: #FFC1C1;
 }
 
