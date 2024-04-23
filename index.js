@@ -14,7 +14,7 @@ const Positions = ['top', 'bottom', 'left', 'right', 'top-right', 'top-left', 'b
  * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation. 
  * @returns {void}
 */
-export function success({ title = 'Success', message, position, duration, animation, loadingIndicator}) {
+export function success({ title = 'Success', message, position, duration, animation, loadingIndicator }) {
 
     notificationHandler('success', title, message, position, duration, animation, loadingIndicator)
 
@@ -31,7 +31,7 @@ export function success({ title = 'Success', message, position, duration, animat
  * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation.
  * @returns {void}
 */
-export function error({ title = 'Error', message, position, duration, animation, loadingIndicator}) {
+export function error({ title = 'Error', message, position, duration, animation, loadingIndicator }) {
 
     notificationHandler('error', title, message, position, duration, animation, loadingIndicator)
 
@@ -48,7 +48,7 @@ export function error({ title = 'Error', message, position, duration, animation,
  * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation.
  * @returns {void}
 */
-export function warning({ title = 'Warning', message, position, duration, animation, loadingIndicator}) {
+export function warning({ title = 'Warning', message, position, duration, animation, loadingIndicator }) {
 
     notificationHandler('warn', title, message, position, duration, animation, loadingIndicator)
 
@@ -65,7 +65,7 @@ export function warning({ title = 'Warning', message, position, duration, animat
  * @param {boolean} loadingIndicator - The loading indicator of the notification. Defaults to false in the implementation.
  * @returns {void}
 */
-export function info({ title = 'Info', message, position, duration, animation, loadingIndicator}) {
+export function info({ title = 'Info', message, position, duration, animation, loadingIndicator }) {
 
     notificationHandler('info', title, message, position, duration, animation, loadingIndicator)
 
@@ -93,7 +93,7 @@ function notificationHandler(type, title, message, position = 'bottom-right', du
     //Create Inner Container
     const notificationElement = createNotificationContainer(position);
 
-    notificationElement.classList.add('notifywiz-'+type+'-container');
+    notificationElement.classList.add('notifywiz-' + type + '-container');
 
     //Create Inner Container
     const innerContainer = createNotificationInnerContainer();
@@ -143,13 +143,13 @@ function notificationHandler(type, title, message, position = 'bottom-right', du
 */
 function createContainers() {
 
-    for(let position in Positions) {
-        
-        if(!window.document.getElementById(`notifywiz-container-${Positions[position]}`)) {
+    for (let position in Positions) {
+
+        if (!window.document.getElementById(`notifywiz-container-${Positions[position]}`)) {
 
             const container = window.document.createElement('div');
 
-            container.className = `notifywiz-${Positions[position]} container notifywiz-stackable-container`;
+            container.className = `notifywiz-${Positions[position]} notifywiz-container notifywiz-stackable-container`;
             container.id = `notifywiz-container-${Positions[position]}`;
             window.document.body.appendChild(container);
 
@@ -335,8 +335,8 @@ function appendToContainer(
     innerContainer.appendChild(titleMessageContainer);
     notificationElement.appendChild(innerContainer);
     notificationElement.appendChild(closeElement);
-    if(loadingIndicator) notificationElement.appendChild(loadingElement);
-    
+    if (loadingIndicator) notificationElement.appendChild(loadingElement);
+
     animate('in', notificationElement, animation);
 
     window.document.getElementById(`notifywiz-container-${position}`).appendChild(notificationElement);
@@ -375,22 +375,22 @@ function createNotificationDuration(duration, notificationElement, animation) {
 */
 function animate(direction, notificationElement, animation) {
 
-    if(animation === 'none') return;
+    if (animation === 'none') return;
 
-    if(direction === 'in') {
+    if (direction === 'in') {
 
         notificationElement.classList.remove('notifywiz-fadeOut', 'notifywiz-slideOut')
-        if(animation === 'fade') notificationElement.classList.add('notifywiz-fadeIn');
-        if(animation === 'slide') notificationElement.classList.add('notifywiz-slideIn');
+        if (animation === 'fade') notificationElement.classList.add('notifywiz-fadeIn');
+        if (animation === 'slide') notificationElement.classList.add('notifywiz-slideIn');
 
     }
-    
-    if(direction === 'out') {
+
+    if (direction === 'out') {
 
         notificationElement.classList.remove('notifywiz-fadeIn', 'notifywiz-slideIn')
-        if(animation === 'fade') notificationElement.classList.add('notifywiz-fadeOut');
-        if(animation === 'slide') notificationElement.classList.add('notifywiz-slideOut');
-        
+        if (animation === 'fade') notificationElement.classList.add('notifywiz-fadeOut');
+        if (animation === 'slide') notificationElement.classList.add('notifywiz-slideOut');
+
     }
 
 }
