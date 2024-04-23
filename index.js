@@ -149,7 +149,7 @@ function createContainers() {
 
             const container = window.document.createElement('div');
 
-            container.className = `notifywiz-${Positions[position]} notifywiz-container notifywiz-stackable-container`;
+            container.className = `notifywiz-${Positions[position]} container notifywiz-stackable-container`;
             container.id = `notifywiz-container-${Positions[position]}`;
             window.document.body.appendChild(container);
 
